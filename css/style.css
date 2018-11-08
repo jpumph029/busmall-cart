@@ -1,1 +1,27 @@
 /* TODO: Make it awesome */
+header, footer {
+    position: relative;
+    width: 100%;
+    background-color: #696969;
+    color: white;
+}
+main    {
+    height: 690px;
+    position: relative;
+    text-align: center;
+}
+section.deck.col-2 {
+    padding: 15px;
+}
+ol {
+    padding: 15px;
+    font-size: x-large;
+}
+div.card:only-child {
+    font-size: -webkit-xxx-large;
+}
+table#cart {
+    text-align: center;
+    position: relative;
+    left: 37%;
+}
