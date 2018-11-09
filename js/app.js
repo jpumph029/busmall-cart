@@ -15,9 +15,13 @@ Cart.prototype.addItem = function(product, quantity) {
   var button = document.getElementById('catalog');
   button.addEventListener('submit', function (event) {
     event.preventDefault();
-    this.items.push(event.target.product.name);
-    Cart.items.push(event.target.quantity.type);
-    console.log(Cart.items);
+    
+    product = event.target.items.textContent
+    quantity = event.target.quantity.number
+    var that = new CartItem(product, quantity);
+    event.target.items.textContent = '';
+    event.target.quantity.number = '';
+    console.log(that);
   });
   
 };
